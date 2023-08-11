@@ -10,12 +10,12 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: 'http://localhost:3000',
+        origin: 'https://task6-79aae.web.app',
         methods: ['GET', 'POST'],
     },
 });
 
-const port = 3001;
+const port = 3003;
 app.use(cors());
 
 MySQLConnector.init();
